@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>BGE15 KKS | Login </title>
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+  <style>
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+</style>
+    
+  </head>
+
+  <body>
+ 
+
+<center>
+<div class="alert danger">
+ 
+  <strong><b>Anmeldung fehlgeschlagen! </b></strong> Bitte versuchen sie es erneut.
+</div> 
+</center>
+ <form action="login.php" method="post">
+  
+  
+  <fieldset>
+     
+
+	 <legend class="legend">Login</legend>
+	
+	
+	
+
+
+
+   <div class="input">
+    	<input type="text"   name="user"  placeholder="Benutzername" required />
+      <span><i class="fa fa-envelope-o"></i></span>
+    </div>
+    
+    <div class="input">
+    	<input type="password" name="password"  placeholder="Password" required />
+      <span><i class="fa fa-lock"></i></span>
+    </div>
+    
+    <button type="submit" class="submit" name= "login"><i class="fa fa-long-arrow-right"></i></button>
+  
+
+  </fieldset>
+  
+  <div class="feedback">
+  	Anmeldung Erfolgreich <br />
+    Sie werden Weitergeleitet...
+  </div>
+  
+</form>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
